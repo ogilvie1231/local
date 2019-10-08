@@ -1,0 +1,16 @@
+#tableBody {
+    background-color: rgb(216, 216, 216);
+    padding: 2%;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    margin: 2%;
+}
+
+#infoTable {
+    margin-bottom: 10%;
+}

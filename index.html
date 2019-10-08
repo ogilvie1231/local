@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+
+    <title>iVape</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">iVape Count Sheet Tracker</h1>
+            <p class="lead"></p>
+        </div>
+    </div>
+    <div id="tableBody">
+        <form id="train-form" class="container">
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input class="form-control" id="date" placeholder="mm/dd/yyyy" type="text">
+            </div>
+            <div class="form-group">
+                <label for="vendor">Vendor</label>
+                <input class="form-control" id="vendor" placeholder="health cabin, juice supply co, etc" type="text">
+            </div>
+            <div class="form-group">
+                <label for="pageCount">Number of Pages</label>
+                <input class="form-control" id="pageCount" placeholder="number of pages" type="text">
+            </div>
+            <div class="form-group">
+                <label for="employee">Employee</label>
+                <input class="form-control" id="employee" placeholder="Raleigh, Robbie, etc" type="text">
+            </div>
+            <button type="button" class="btn btn-primary" id="submitButton">Submit</button>
+        </form>
+    </div>
+
+    <table class="table table-sm table-hover container" id='infoTable'>
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Vendor</th>
+                <th scope="col">Number of Pages</th>
+                <th scope="col">Employee</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+</body>
+<script src="assets/js/app.js"></script>
+
+
+</html>
